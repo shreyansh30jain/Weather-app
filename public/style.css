@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin-top: 80px;
+}
+.row{
+    justify-content: center;
+}
+.col-md-4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin: auto;
+}
+.inner--data{
+    background-color: black;
+    opacity: 50%;
+    border-radius: 10px;
+}
+.temperature{
+    font-weight: bolder;
+    margin-bottom: 55px;
+}
+.weather--type{
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 600px){
+    .temperature{
+        font-weight: bolder;
+        margin-bottom: 105px;
+        margin-top: 30px;
+    }
+    .card-text{
+        margin-bottom: 25px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .inner--data{
+        margin-top: 30px;
+    }
+    .inner--data i{
+        margin-top: 15px;
+    }
+    .card-title{
+        font-size: 40px;
+    }
+    .weather--type{
+        font-size: 25px;
+        padding-bottom: 35px;
+    }
+    .min_max--temp{
+        font-size: 25px;
+    }
+    ::placeholder{
+        font-size: 20px;
+    }
+    input[type="search"]
+{
+  font-size:20px;
+}
+.form{
+    width: 400px;
+}
+.form-control{
+    height: 50px;
+}
+.input-group-text{
+    width: 60px;
+}
+.container{
+    margin-top: 20px;
+}
+}
+@media screen and (max-width: 490px) {
+    .temperature{
+        margin-bottom: 55px;
+    }
+    .card-text{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+    .weather--type{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .form-control{
+        height: 50px;
+    }
+    .input-group-text{
+        height: 50px;
+        width: 60px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .container{
+        margin-top: 10px;
+    }
+    .inner--data{
+        margin-top: 0px;
+    }
+    .temperature{
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    .card-text{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .weather--type{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .form-control{
+        height: 40px;
+    }
+    .input-group-text{
+        height: 40px;
+        width: 40px;
+    }
+    .min_max--temp{
+        font-size: 15px;
+    }
+    form{
+        width: 250px;
+    }
+}
