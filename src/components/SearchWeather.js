@@ -4,14 +4,12 @@ export default function SearchWeather() {
     const [weather , setWeather] = useState();
     const [input , setInput] = useState("");
 
-
-    async function weatherCon(){
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=016692285b764d6403b8ccc99c7ce37f`)
-      const data = await res.json()
-      setWeather(data)
-    }
-
     useEffect(()=>{
+      async function weatherCon(){
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=016692285b764d6403b8ccc99c7ce37f`)
+        const data = await res.json()
+        setWeather(data)
+      }
     weatherCon()
     },[search]) 
     const temp1 = (weather?.main?.temp -273.15).toFixed(2)
